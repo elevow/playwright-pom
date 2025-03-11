@@ -1,0 +1,23 @@
+{
+    "name": "playwright-pom-crawler",
+    "version": "0.1.1",
+    "description": "A CLI tool to crawl web pages and generate POMs.",
+    "main": "src/cli.js",
+    "bin": {
+        "pom-generator": "./src/cli.js"
+    },
+    "scripts": {
+        "crawl": "npx playwright test ./src/reader.spec.js --project=Large --headed",
+        "crawl:large": "npx playwright test ./src/reader.spec.js --project=Large --headed",
+        "crawl:medium": "npx playwright test ./src/reader.spec.js --project=Medium --headed",
+        "crawl:small": "npx playwright test ./src/reader.spec.js --project=Small --headed"
+    },
+    "author": "elevow",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^12.1.0",
+        "fs-extra": "^11.2.0",
+        "playwright": "^1.50.1",
+        "prettier": "^3.4.2"
+    }
+}

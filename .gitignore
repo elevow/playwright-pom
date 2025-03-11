@@ -1,0 +1,4 @@
+node_modules
+test-results
+generatedPOM
+package-lock.json
